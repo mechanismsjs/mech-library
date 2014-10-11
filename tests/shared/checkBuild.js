@@ -4,6 +4,6 @@ describe("the modules were built correctly", function() {
    });
 
    it ("should have the correct version", function() {
-      expect(m.library.version).to.equal('0.1.1');
+      expect(m.library.version).to.equal('0.1.2');
    });
 });

@@ -22,7 +22,7 @@ m.library = previous || {};
 
 // Current version updated by
 // gulpfile.js build process
-m.library["version"] = '0.1.1';
+m.library["version"] = '{{VERSION}}';
 
 // Export module for Node and the browser.
 if(typeof module !== 'undefined' && module.exports) {

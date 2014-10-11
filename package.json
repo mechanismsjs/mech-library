@@ -1,14 +1,14 @@
 {
   "name": "mech-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "YOUR library DESCRIPTION",
-  "main": "./dist/mech-web.js",
+  "main": "./dist/mech-library.js",
   "scripts": {
     "test": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mechanismsjs/mech-web.git"
+    "url": "https://github.com/mechanismsjs/mech-library.git"
   },
   "keywords": [
     "mechanisms",
