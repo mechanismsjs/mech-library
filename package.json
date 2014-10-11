@@ -1,7 +1,7 @@
 {
-  "name": "mech-LIBRARY",
+  "name": "mech-library",
   "version": "0.1.1",
-  "description": "YOUR LIBRARY DESCRIPTION",
+  "description": "YOUR library DESCRIPTION",
   "main": "./dist/mech-web.js",
   "scripts": {
     "test": "gulp"
@@ -21,9 +21,9 @@
   "author": "YOUR INFORMATION",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ORGANIZATION/mech-LIBRARY/issues"
+    "url": "https://github.com/ORGANIZATION/mech-library/issues"
   },
-  "homepage": "https://github.com/ORGANIZATION/mech-LIBRARY",
+  "homepage": "https://github.com/ORGANIZATION/mech-library",
   "devDependencies": {
     "browserify": "^6.0.2",
     "chai": "^1.9.2",

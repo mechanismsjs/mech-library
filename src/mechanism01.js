@@ -66,5 +66,5 @@ Mechanism01.prototype = Object.create ( Object.prototype, {
 Mechanism01.prototype.isMech = true;
 Mechanism01.prototype.isNull = false;
 Mechanism01.prototype.isPrim = false;
-m.LIBRARY.mechanism01 = mechanism01;
-m.LIBRARY.Mechanism01 = Mechanism01;
+m.library.mechanism01 = mechanism01;
+m.library.Mechanism01 = Mechanism01;

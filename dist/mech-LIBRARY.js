@@ -1,4 +1,4 @@
-// mech-LIBRARY.js
+// mech-library.js
 // version: 0.1.1
 // author: YOUR INFORMATION
 // license: MIT
@@ -10,23 +10,23 @@
 //   'exports' on the server
 var root = this;
 
-// Save the previous LIBRARY
+// Save the previous library
 if (typeof root.m === 'undefined') {
    root.m = {};
 }
 var m = root.m;
 
-var previous = m.LIBRARY;
+var previous = m.library;
 
 // New module or use existing
 // NOTE: If you want to add the
 // mechanism directly to another
 // library, please fork that libary.
-m.LIBRARY = previous || {};
+m.library = previous || {};
 
 // Current version updated by
 // gulpfile.js build process
-m.LIBRARY["version"] = '0.1.1';
+m.library["version"] = '0.1.1';
 
 // Export module for Node and the browser.
 if(typeof module !== 'undefined' && module.exports) {
@@ -103,8 +103,8 @@ Mechanism01.prototype = Object.create ( Object.prototype, {
 Mechanism01.prototype.isMech = true;
 Mechanism01.prototype.isNull = false;
 Mechanism01.prototype.isPrim = false;
-m.LIBRARY.mechanism01 = mechanism01;
-m.LIBRARY.Mechanism01 = Mechanism01;
+m.library.mechanism01 = mechanism01;
+m.library.Mechanism01 = Mechanism01;
 function mechanism02(data01, data02) {
    var f = Object.create(Mechanism02.prototype);
    f.data01 = data01;
@@ -173,7 +173,7 @@ Mechanism02.prototype = Object.create ( Object.prototype, {
 Mechanism02.prototype.isMech = true;
 Mechanism02.prototype.isNull = false;
 Mechanism02.prototype.isPrim = false;
-m.LIBRARY.mechanism02 = mechanism02;
-m.LIBRARY.Mechanism02 = Mechanism02;
+m.library.mechanism02 = mechanism02;
+m.library.Mechanism02 = Mechanism02;
 
 }.call(this));

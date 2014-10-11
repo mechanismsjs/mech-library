@@ -4,15 +4,15 @@ Mechanisms are plugins for open source.
 
 This project is here to get you started in making new mechanism libraries.
 
-    $ git clone git@github.com:mechanismsjs/mech-library.git LIBRARY
+    $ git clone git@github.com:mechanismsjs/mech-library.git library
 
-Where LIBRARY will be the name of the new mechanism library.
+Where library will be the name of the new mechanism library.
 
 If you want to add mechanisms to one of the existing libraries please fork that library.
 
 ## What to do?
 
-Anywhere you see LIBRARY replace it with your library name.
+Anywhere you see library replace it with your library name.
 
 Anywhere you see mechanism01, mechanism02 ... mechanismnn replace the code with your own mechanisms.
 
@@ -20,11 +20,11 @@ Be sure to update your information in the package.json: Your github organization
 
 Use the Example Documentation below to describe your mechanism.
 
-# mech-LIBRARY
+# mech-library
 
 Mechanisms are plugins for open source.
 
-ABOUT YOUR LIBRARY
+ABOUT YOUR library
 
 Supported Mechanisms:
 
@@ -37,7 +37,7 @@ See [Mechanisms Home](https://github.com/mechanisms/mech) for more information.
 
 * [Git mech-core](https://github.com/mechanismsjs/mech-core) latest version.
 * [Git mech-web](https://github.com/mechanismsjs/mech-web) latest version.
-* [Git mech-LIBRARY](https://github.com/mechanismsjs/mech-LIBRARY) latest version.
+* [Git mech-library](https://github.com/mechanismsjs/mech-library) latest version.
 
 ## MECH-NAME01
 
@@ -61,7 +61,7 @@ MECH-NAME02 examples
 
 Change directory to your node project.
 
-    $ npm install --save mech-LIBRARY
+    $ npm install --save mech-library
 
 ## Development
 

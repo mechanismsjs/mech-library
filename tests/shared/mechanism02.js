@@ -1,12 +1,12 @@
 describe ("getting an element by id - domElemId document.getElementById(id)", function() {   
    it ("should not wipeout Object prototype and be a mechanism", function() {
-      var mech = m.LIBRARY.mechanism02(1,2);
+      var mech = m.library.mechanism02(1,2);
       expect(mech).to.have.property('toString');
-      expect(m.LIBRARY.Mechanism02).to.not.eql(null);
+      expect(m.library.Mechanism02).to.not.eql(null);
    });
 
    it ("should have correct properties", function() {
-      var mech = m.LIBRARY.mechanism02(1,2);
+      var mech = m.library.mechanism02(1,2);
       expect(mech).to.have.property('isMech');
       expect(mech.isMech).to.be.true;
       
@@ -26,15 +26,15 @@ describe ("getting an element by id - domElemId document.getElementById(id)", fu
 
    it ("contract: data01 and data02 of mechanism02 must be defined or a non-null value.", function() {
       // cause i am lazy to figure this out
-      try { var x = m.LIBRARY.mechanism02(); } catch (e) {
+      try { var x = m.library.mechanism02(); } catch (e) {
          expect(e).to.equal("data01 and data02 of mechanism02 must be defined or a non-null value.");
       }
    
-      try { var x = m.LIBRARY.mechanism02(null); } catch (e) {
+      try { var x = m.library.mechanism02(null); } catch (e) {
          expect(e).to.equal("data01 and data02 of mechanism02 must be defined or a non-null value.");
       }
 
-      try { var x = m.LIBRARY.mechanism02(undefined); } catch (e) {
+      try { var x = m.library.mechanism02(undefined); } catch (e) {
          expect(e).to.equal("data01 and data02 of mechanism02 must be defined or a non-null value.");
       }
    
