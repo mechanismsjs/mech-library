@@ -15,8 +15,7 @@
     "client",
     "server",
     "library",
-    "browser",
-    "dom"
+    "browser"
   ],
   "author": "YOUR INFORMATION",
   "license": "MIT",

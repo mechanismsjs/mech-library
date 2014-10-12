@@ -51,25 +51,23 @@ gulp.task('watch-mocha', function() {
 
 gulp.task('build', function() {
    // Single entry point to browserify
-   
-   var generate = gulp.src(source)
-      .pipe(concat(libFileName))
-      .pipe(header(banner()))
-      .pipe(replace('{{VERSION}}',pkg.version))
-      .pipe(gulp.dest('dist'));
-   
    var browserified = transform(function(filename) {
        return browserify()
          .require(libMain, {expose: libName})
          .bundle();
    });
-
-   return gulp.src(libMain)
-      .pipe(browserified)
-      .pipe(rename(libName + '.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('dist'))
-      .on('error', gutil.log);
+   
+   return gulp.src(source)                // list of .js files we will concat
+      .pipe(concat(libFileName))          // concat into pkg.name + '.js'
+      .pipe(header(banner()))             // add header (your name, etc.)
+      .pipe(replace('{{VERSION}}',        // update version tag in code
+         pkg.version))
+      .pipe(gulp.dest('dist'))            // dump pkg.name + '.js'
+      .pipe(rename(libName + '.min.js'))  // rename before browserify
+      .pipe(browserified)                 // setup for browser support
+      .pipe(uglify())                     // minify it
+      .pipe(gulp.dest('dist'))            // dump pkg.name + '.min.js'
+      .on('error', gutil.log);            // log any errors
 });
 
 gulp.task('webtests', function() {

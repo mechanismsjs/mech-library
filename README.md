@@ -20,6 +20,12 @@ Be sure to update your information in the package.json: Your github organization
 
 Use the Example Documentation below to describe your mechanism.
 
+[mech-home-link]: https://github.com/mechanisms/mech "Home repository for mechanisms"
+[mech-core-link]: https://github.com/mechanismsjs/mech-core "Core mechanisms"
+[mech-web-link]: https://github.com/mechanismsjs/mech-web "Web centric DOM mechanisms"
+[mech-guid-link]: https://github.com/mechanismsjs/mech-guid "Guid mechanisms"
+[mech-library-link]: https://github.com/mechanismsjs/mech-library "Clone to easily create new mechanism libraries"
+
 # mech-library
 
 Mechanisms are plugins for open source.
@@ -31,29 +37,33 @@ Supported Mechanisms:
 * MECHANISM01 - description
 * MECHANISM01 - description
 
-See [Mechanisms Home](https://github.com/mechanisms/mech) for more information.
+See [Mechanisms Home][mech-home-link] for more information.
 
-# Documentation
+## Other Libraries
 
-* [Git mech-core](https://github.com/mechanismsjs/mech-core) latest version.
-* [Git mech-web](https://github.com/mechanismsjs/mech-web) latest version.
-* [Git mech-library](https://github.com/mechanismsjs/mech-library) latest version.
+* [Git mech-core][mech-core-link] latest version.
+* [Git mech-web][mech-web-link] latest version.
+* [Git mech-guid][mech-guid-link] latest version.
+* [Git mech-library][mech-library-link] latest version.
 
-## MECH-NAME01
+# Supported Mechanisms
+
+* *mechanism01* - description
+* *mechanism02* - description
+
+
+## MECHANISM01 mechanism
 
 description
 
-### Examples
+and examples
 
-MECH-NAME01 examples
-
-## MECH-NAME02
+## MECHANISM02 mechanism
 
 description
 
-### Examples
+and examples
 
-MECH-NAME02 examples
 
 # Setup
 
