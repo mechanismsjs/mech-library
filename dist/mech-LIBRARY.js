@@ -1,5 +1,5 @@
 // mech-library.js
-// version: 0.1.2
+// version: 0.1.3
 // author: YOUR INFORMATION
 // license: MIT
 (function() {
@@ -26,7 +26,7 @@ m.library = previous || {};
 
 // Current version updated by
 // gulpfile.js build process
-m.library["version"] = '0.1.2';
+m.library["version"] = '0.1.3';
 
 // Export module for Node and the browser.
 if(typeof module !== 'undefined' && module.exports) {
