@@ -36,10 +36,6 @@ var banner = function(bundled) {
 gulp.task('default', ['build','mocha','watch-mocha']);
 
 gulp.task('mocha', ['build'], function() {
-   
-   gulp.src('testsweb/index.html')
-     .pipe(mochaPhantom({reporter: 'spec'}));
-   
    return gulp.src(['tests/*test.js'], { read: false })
       .pipe(mocha({ reporter: 'spec' }))
       .on('error', gutil.log);

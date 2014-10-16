@@ -1,4 +1,4 @@
-describe ("getting an element by id - domElemId document.getElementById(id)", function() {   
+describe ("testing mechanism02", function() {   
    it ("should not wipeout Object prototype and be a mechanism", function() {
       var mech = m.library.mechanism02(1,2);
       expect(mech).to.have.property('toString');
@@ -7,13 +7,8 @@ describe ("getting an element by id - domElemId document.getElementById(id)", fu
 
    it ("should have correct properties", function() {
       var mech = m.library.mechanism02(1,2);
-      expect(mech).to.have.property('isMech');
       expect(mech.isMech).to.be.true;
-      
-      expect(mech).to.have.property('isNull');
       expect(mech.isNull).to.be.false;
-      
-      expect(mech).to.have.property('isPrim');
       expect(mech.isPrim).to.be.false;
       
       expect(mech).to.have.property('data01');

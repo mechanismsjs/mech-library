@@ -7,13 +7,8 @@ describe ("testing mechanism01", function() {
 
    it ("should have correct properties", function() {
       var mech = m.library.mechanism01(1,2);
-      expect(mech).to.have.property('isMech');
       expect(mech.isMech).to.be.true;
-      
-      expect(mech).to.have.property('isNull');
       expect(mech.isNull).to.be.false;
-      
-      expect(mech).to.have.property('isPrim');
       expect(mech.isPrim).to.be.false;
       
       expect(mech).to.have.property('data01');

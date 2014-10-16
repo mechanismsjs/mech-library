@@ -6,6 +6,9 @@ function mechanism02(data01, data02) {
 };
 function Mechanism02() {};
 Mechanism02.prototype = Object.create ( Object.prototype, {
+   isMech: { get: function() { return true }},
+   isNull: { get: function() { return false }},
+   isPrim: { get: function() { return false }},
    data01: { enumerable: false,
       get: function() { return this._data01; },
       set: function(d) {
@@ -63,8 +66,5 @@ Mechanism02.prototype = Object.create ( Object.prototype, {
       }
    }
 });
-Mechanism02.prototype.isMech = true;
-Mechanism02.prototype.isNull = false;
-Mechanism02.prototype.isPrim = false;
 m.library.mechanism02 = mechanism02;
 m.library.Mechanism02 = Mechanism02;

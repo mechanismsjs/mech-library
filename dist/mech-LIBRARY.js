@@ -1,32 +1,16 @@
 // mech-library.js
-// version: 0.1.3
+// version: 0.1.4
 // author: YOUR INFORMATION
 // license: MIT
 (function() {
 "use strict";
-   
-// Establish the root object:
-//   'window' in the browser
-//   'exports' on the server
-var root = this;
 
-// Save the previous library
-if (typeof root.m === 'undefined') {
-   root.m = {};
-}
+var root = this; // Establish root object 'window' (browser) or 'exports' (server)
+if (typeof root.m === 'undefined') { root.m = {}; } // Save the previous library
 var m = root.m;
-
 var previous = m.library;
-
-// New module or use existing
-// NOTE: If you want to add the
-// mechanism directly to another
-// library, please fork that libary.
-m.library = previous || {};
-
-// Current version updated by
-// gulpfile.js build process
-m.library["version"] = '0.1.3';
+m.library = previous || {}; // New library OR to use existing library (m for example), please fork and add to that project.
+m.library["version"] = '0.1.4'; // Version auto updated by gulpfile.js build process
 
 // Export module for Node and the browser.
 if(typeof module !== 'undefined' && module.exports) {
@@ -43,6 +27,9 @@ function mechanism01(data01, data02) {
 };
 function Mechanism01() {};
 Mechanism01.prototype = Object.create ( Object.prototype, {
+   isMech: { get: function() { return true }},
+   isNull: { get: function() { return false }},
+   isPrim: { get: function() { return false }},
    data01: { enumerable: false,
       get: function() { return this._data01; },
       set: function(d) {
@@ -100,9 +87,6 @@ Mechanism01.prototype = Object.create ( Object.prototype, {
       }
    }
 });
-Mechanism01.prototype.isMech = true;
-Mechanism01.prototype.isNull = false;
-Mechanism01.prototype.isPrim = false;
 m.library.mechanism01 = mechanism01;
 m.library.Mechanism01 = Mechanism01;
 function mechanism02(data01, data02) {
@@ -113,6 +97,9 @@ function mechanism02(data01, data02) {
 };
 function Mechanism02() {};
 Mechanism02.prototype = Object.create ( Object.prototype, {
+   isMech: { get: function() { return true }},
+   isNull: { get: function() { return false }},
+   isPrim: { get: function() { return false }},
    data01: { enumerable: false,
       get: function() { return this._data01; },
       set: function(d) {
@@ -170,9 +157,6 @@ Mechanism02.prototype = Object.create ( Object.prototype, {
       }
    }
 });
-Mechanism02.prototype.isMech = true;
-Mechanism02.prototype.isNull = false;
-Mechanism02.prototype.isPrim = false;
 m.library.mechanism02 = mechanism02;
 m.library.Mechanism02 = Mechanism02;
 
