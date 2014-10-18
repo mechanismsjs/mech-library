@@ -2,14 +2,15 @@ describe ("testing mechanism01", function() {
    it ("should not wipeout Object prototype and be a mechanism", function() {
       var mech = m.library.mechanism01(1,2);
       expect(mech).to.have.property('toString');
-      expect(m.library.Mechanism01).to.not.eql(null);
+      expect(m).to.not.be.undefined;
+      expect(m.library).to.not.be.undefined;
+      expect(m.library._).to.not.be.undefined;
+      expect(m.library._.Mechanism01).to.not.be.undefined;
    });
 
    it ("should have correct properties", function() {
       var mech = m.library.mechanism01(1,2);
       expect(mech.isMech).to.be.true;
-      expect(mech.isNull).to.be.false;
-      expect(mech.isPrim).to.be.false;
       
       expect(mech).to.have.property('data01');
       expect(mech).to.have.property('_data01'); // imagined privacy

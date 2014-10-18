@@ -1,16 +1,15 @@
 (function() {
 "use strict";
 
-var root = this; // Establish root object 'window' (browser) or 'exports' (server)
-if (typeof root.m === 'undefined') { root.m = {}; } // Save the previous library
-var m = root.m;
-var previous = m.library;
-m.library = previous || {}; // New library OR to use existing library (m for example), please fork and add to that project.
-m.library["version"] = '{{VERSION}}'; // Version auto updated by gulpfile.js build process
+var root = this; // window (browser) or exports (server)
+var m = root.m || { library : { _ : {} } }; // merge with previous or new module
+m.library = m.library || { library : { _ : {} } }; // merge with pervious or new sub-module
+m.library._ = m.library._ || { _ : {}}; // merge with pervious or new sub-module
+m.library._["version-{{NAMESUB}}"] = '{{VERSION}}'; // version set through gulp build
 
-// Export module for Node and the browser.
+// export module for node or the browser
 if(typeof module !== 'undefined' && module.exports) {
   module.exports = m;
 } else {
-  root.m = m;
+  root.m = m
 }

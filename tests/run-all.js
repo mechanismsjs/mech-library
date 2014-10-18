@@ -1,3 +1,2 @@
-require("./shared/checkBuild.js");
+require("./check-build.js");
 require("./shared/mechanism01.js");
-require("./shared/mechanism02.js");
