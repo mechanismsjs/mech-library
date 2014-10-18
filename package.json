@@ -1,7 +1,7 @@
 {
   "name": "mech-library",
   "namesub": "library",  
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "your library description",
   "main": "./dist/mech-library.js",
   "scripts": {
