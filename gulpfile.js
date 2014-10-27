@@ -1,4 +1,4 @@
-var pkg = require('./package.json'); // Changed this? Need to re-run gulp to reload the 
+var pkg = require('./package.json'); // Changed this? Need to re-run gulp to reload the
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var coffee = require('gulp-coffee');
@@ -8,7 +8,7 @@ var uglify = require('gulp-uglify');
 var replace = require('gulp-replace');
 var rename = require('gulp-rename');
 var mocha = require('gulp-mocha');
-var mochaPhantom  = require('gulp-mocha-phantomjs')
+var mochaPhantom  = require('gulp-mocha-phantomjs');
 var browserify = require('browserify');
 var transform = require('vinyl-transform');
 
@@ -24,7 +24,7 @@ var banner = function(bundled) {
     '// version: ' + pkg.version,
     '// author: ' + pkg.author,
     '// license: ' + pkg.license
-  ].join('\n') + '\n'
+  ].join('\n') + '\n';
 };
 
 gulp.task('default', ['build','mocha','watch-mocha']);
@@ -67,8 +67,5 @@ gulp.task('build', function(){
 
 gulp.task('webtests', ['build'], function() {
   return gulp.src('testsweb/index.html')
-    .pipe(mochaPhantom({reporter: 'spec'}))
-})
-
-
-
+    .pipe(mochaPhantom({reporter: 'spec'}));
+});

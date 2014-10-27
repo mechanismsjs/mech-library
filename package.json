@@ -1,12 +1,13 @@
 {
   "name": "mech-library",
-  "namesub": "library",  
-  "version": "0.1.5",
+  "namesub": "library",
+  "version": "0.1.6",
   "description": "your library description",
   "main": "./dist/mech-library.js",
   "scripts": {
     "test": "gulp"
   },
+  "README" : "Adding or removing from source requires you to restart gulp.",
   "source": [
    "src/util/header.js",
    "src/mechanism01.js",

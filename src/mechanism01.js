@@ -3,15 +3,15 @@ function mechanism01(data01, data02) {
    f.data01 = data01;
    f.data02 = data02;
    return f;
-};
-function Mechanism01() {};
+}
+function Mechanism01() {}
 Mechanism01.prototype = Object.create ( Object.prototype, {
-   isMech: { get: function() { return true }},
+   isMech: { get: function() { return true; }},
    data01: { enumerable: false,
       get: function() { return this._data01; },
       set: function(d) {
          if ((null === d) || (undefined === d)) {
-            throw ("data01 and data02 of mechanism01 must be defined or a non-null value.")
+            throw ("data01 and data02 of mechanism01 must be defined or a non-null value.");
          } else {
             this._data01 = d;
          }
@@ -21,13 +21,13 @@ Mechanism01.prototype = Object.create ( Object.prototype, {
       get: function() { return this._data02; },
       set: function(d) {
          if ((null === d) || (undefined === d)) {
-            throw ("data01 and data02 of mechanism02 must be defined or a non-null value.")
+            throw ("data01 and data02 of mechanism02 must be defined or a non-null value.");
          } else {
             this._data02 = d;
          }
       }
    },
-   
+
    go: { enumerable: false,
       get: function() {
          // REQUIRED:

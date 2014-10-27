@@ -11,5 +11,5 @@ m.library._["version-{{NAMESUB}}"] = '{{VERSION}}'; // version set through gulp 
 if(typeof module !== 'undefined' && module.exports) {
   module.exports = m;
 } else {
-  root.m = m
+  root.m = m;
 }
