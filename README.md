@@ -30,13 +30,11 @@ See [Mechanisms Home][mech-home-link] for more information and other libraries.
 
 Supported Mechanisms:
 
-* *mechanism01* - description
+* *[mechanism01](#mechanism01-mechanism)* - description
 
 # Supported Mechanisms
 
-* *mechanism01* - description
-
-## Mechanism01 mechanism
+## <a name="mechanism01-mechanism"></a> Mechanism01 mechanism
 
 description
 
@@ -66,6 +64,8 @@ See ./dist for files we build.
 
     $ gulp webtests
 
-OR
+#### Test Server
 
-Right mouse click on /testsweb/index.html and open in browser.
+Read documentation in gulpfile.js to see how to setup automated web testing.
+
+    $ gulp webserver
