@@ -6,7 +6,7 @@ describe("the modules were built correctly", function() {
 		expect(m.library).to.not.eql(undefined);
 	});
 
-	it("should have the correct version and set your new library to 0.1.1", function() {
-		expect(m.library._["version-" + pkg.namesub]).to.equal('0.1.1');
+	it("should have the correct version and set your new library to that version", function() {
+		expect(m.library._["version-" + pkg.namesub]).to.equal('0.2.0');
 	});
 });
