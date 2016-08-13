@@ -7,6 +7,6 @@ describe("the modules were built correctly", function() {
 	});
 
 	it("should have the correct version and set your new library to that version", function() {
-		expect(m.library._["version-" + pkg.namesub]).to.equal('0.2.0');
+		expect(m.library._["version-" + pkg.namesub]).to.equal('0.2.1');
 	});
 });
