@@ -1,7 +1,7 @@
 {
   "name": "mech-library",
   "namesub": "library",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "your library description",
   "main": "./dist/mech-library.js",
   "scripts": {
@@ -34,6 +34,7 @@
     "chai": "^3.5.0",
     "gulp": "^3.8.8",
     "gulp-concat": "^2.4.1",
+    "gulp-connect": "^2.2.0",
     "gulp-header": "^1.1.1",
     "gulp-mocha": "^3.0.1",
     "gulp-mocha-phantomjs": "^0.11.0",
@@ -41,10 +42,9 @@
     "gulp-replace": "^0.5.4",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.1",
-    "mech-emit": "^0.1.7",
-    "mech-math": "^0.1.10",
     "merge": "^1.2.0",
     "mocha": "^3.0.2",
-    "mech-core": "*"
+    "mech-core": "*",
+    "mech-math": "*"
   }
 }

@@ -4,7 +4,9 @@ Mechanisms are plugins for open source.
 
 This project is here to get you started in making new mechanism libraries.
 
-    $ git clone git@github.com:mechanismsjs/mech-library.git library
+```
+$ git clone git@github.com:mechanismsjs/mech-library.git library
+```
 
 Where 'mech-library' will be the name of the new mechanism library you are creating.
 
@@ -46,26 +48,40 @@ and examples
 
 Change directory to your node project.
 
-    $ npm install --save mech-library
+$ npm install --save mech-library
 
 ## Development
 
+## Get Involved!
+
+There are **a lot** of core mechanisms just waiting to be created. Many of them can be created in a few hours including in-depth tests. Clone [mech-library][mech-library-link] to get started!
+
 ### Setup
 
-    $ npm install
-    
-### Continuous Rebuild and Testing
+Install:
 
-See ./dist for files we build.
+```
+$ npm install
+```
 
-    $ gulp
+Continuous test:
 
-#### Test
+```
+$ gulp
+```
 
-    $ gulp webtests
+Test:
+
+```
+$ gulp webtests
+```
 
 #### Test Server
 
 Read documentation in gulpfile.js to see how to setup automated web testing.
 
-    $ gulp webserver
+```
+$ gulp webserver
+```
+
+[mech-library-link]: https://github.com/mechanismsjs/mech-library "Clone to easily create new mechanism libraries"
