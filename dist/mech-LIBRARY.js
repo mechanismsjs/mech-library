@@ -1,5 +1,5 @@
 // mech-library.js
-// version: 0.2.2
+// version: 0.2.3
 // author: YOUR INFORMATION
 // license: MIT
 (function() {
@@ -19,7 +19,7 @@ m.library = m.library || {
 m.library._ = m.library._ || {
   _: {}
 }; // merge with pervious or new sub-module
-m.library._["version-library"] = '0.2.2'; // version set through gulp build
+m.library._["version-library"] = '0.2.3'; // version set through gulp build
 
 // export module for node or the browser
 if (typeof module !== 'undefined' && module.exports) {
